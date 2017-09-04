@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#allcanvas {
+    position: relative;
+    margin:0;
+}
+#canvas1,#canvas2,#start-page {
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+#canvas1 {
+    z-index: 1;
+}
+#canvas2 {
+    z-index: 0;
+}
+#start-page {
+    margin: auto;
+    width: 80%;
+    top:10%;
+    left: 0;
+    right:0;
+    bottom:0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    z-index: 3;
+}
+#rule {
+    width: 92%;
+    padding: 15px;
+    text-align: left;
+    background: url('../src/tips.png') no-repeat;
+    background-size: 100% 100%;
+}
+#start-btn {
+    width: 130px;
+    height: 50px;
+    background: url('../src/start-btn.png');
+    background-size: cover;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+#tips {
+    display: none;
+    position: absolute;
+    top:130px;
+    animation: slide 1s infinite;
+    z-index: 4;
+}
+@keyframes slide {
+    0% {left:20px;}
+    100% {left:100px;}
+}
